@@ -7,7 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
 @Entity(name="PRODUCT")
@@ -97,10 +96,5 @@ public class Product {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
-	@ManyToOne
-    @JoinColumn(name = "customer_id")
-    private User customer;
-	
 	
 }
