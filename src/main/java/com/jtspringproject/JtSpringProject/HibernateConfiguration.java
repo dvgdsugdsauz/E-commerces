@@ -15,13 +15,13 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 public class HibernateConfiguration {
 
-    @Value("${hibernate.dialect}")
+    @Value("${spring.jpa.properties.hibernate.dialect}")
     private String DIALECT;
 
-    @Value("${hibernate.show_sql}")
+    @Value("${spring.jpa.show-sql}")
     private String SHOW_SQL;
 
-    @Value("${hibernate.hbm2ddl.auto}")
+    @Value("${spring.jpa.hibernate.ddl-auto}")
     private String HBM2DDL_AUTO;
 
     @Value("${entitymanager.packagesToScan}")
